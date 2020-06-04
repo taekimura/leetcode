@@ -1,5 +1,6 @@
 const reverse = (x) =>{
     const reversedX = Math.abs(x).toString().split('').reverse().join('');
+    console.log(reversedX);
     if(+reversedX > Math.pow(2, 31)){
         return 0;
     }else if (x < 0){
