@@ -22,9 +22,9 @@ const twoSum2 = (nums, target) => {
     let map = new Map();
     for (let i = 0; i < nums.length; i++) {
         if (map.has(target - nums[i])) {
-            return console.log([map.get(target - nums[i]), i]);
+            return [map.get(target - nums[i]), i];
         } else {
-            console.log(map.set(nums[i], i));
+            map.set(nums[i], i);
         }
     }
     return console.log('No two sum solution')
